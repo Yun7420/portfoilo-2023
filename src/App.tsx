@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+// 캄포넌트
+import Header from './components/section/Header';
+import Home from './components/section/Home';
+import About from './components/section/About';
+import Skill from './components/section/Skill';
+import Project from './components/section/Project';
+import Study from "./components/section/Study"
+import Footer from './components/section/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home />
+      <About />
+      <Skill />
+      <Project />
+      <Study />
+      <Footer />
     </div>
   );
 }

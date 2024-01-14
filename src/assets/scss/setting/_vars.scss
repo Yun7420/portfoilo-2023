@@ -1,0 +1,46 @@
+// Vars
+:root {
+  --mainfont-play: "PlayfairDisplay";
+
+  --black: #000;
+  --black100: #222;
+  --black200: #555;
+  --black300: #ccc;
+  --black400: #FAFAFA;
+
+  --white: #fff;
+
+  --subColorSky: #47A4FF;
+  --subColorSky100: #a9d4ff;
+  --subColorSky200: #d5eaff;
+  --subColorPurple300: #51277D;
+  --subColorOrange400: #FF6C37;
+
+  // 폰트 셋팅
+  font-size: 16px;
+
+  // 폰트 최적화
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  // 폰트 반응형
+  @media only screen and (max-width: 1000px) {
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 11px;
+  }
+}
+

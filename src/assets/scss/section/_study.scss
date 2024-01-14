@@ -1,0 +1,130 @@
+// Study
+#STUDY {
+  margin-top: 4rem;
+  width: 100%;
+
+  .study_title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: var(--mainfont-play);
+    }
+  }
+
+  .study_info {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    .github {
+      flex: 1;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+
+      padding: 2rem;
+      background-color: var(--black400);
+      border-radius: 1rem;
+
+      .github_title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h3 {
+          font-weight: bolder;
+          color: var(--subColorPurple300)
+        }
+      }
+
+      div {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    .tistory {
+      flex: 1;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+
+      padding: 2rem;
+      background-color: var(--black400);
+      border-radius: 1rem;
+
+      .tistory_title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h3 {
+          font-weight: bolder;
+          color: var(--subColorOrange400)
+        }
+      }
+
+      div {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+// Study 반응형
+@media only screen and (max-width: 650px) {
+  #STUDY {
+    .study_title {
+      justify-content: center;
+    }
+
+    .study_info {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #STUDY {
+    .study_info {
+      .github {
+        div {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      .tistory {
+        div {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
