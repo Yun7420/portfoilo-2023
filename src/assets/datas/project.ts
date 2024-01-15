@@ -146,10 +146,10 @@ export let project_List: {
     src: portfolio_img,
     alt: "Portfolio 이미지",
     title: "Portfolio",
-    text: "Disney 사이트를 클론코딩한 프로젝트입니다. 사용자는 원하는 상영 프로그램의 간단한 내용, 공개일, 장르, 관람등급, 출연진 등을 확일 할 수 있습니다.",
+    text: "학습하고 만들어낸 결과물을 담아둔 포트폴리오 사이트입니다. About에서는 개인적인 정보, Skill에서는 학습한 기술, Project에서는 만들어낸 결과물, Study에서는 공부한 과정들을 확인할 수 있습니다.",
     program: "Js, Ts, React, Scss",
-    siteLink: "https://disney-clone-2023.netlify.app/",
-    codeLink: "https://github.com/Yun7420/disney-clone-project",
+    siteLink: "https://yun7420.github.io/portfolio-2023/",
+    codeLink: "https://github.com/Yun7420/portfolio-2023",
   },
   {
     category: "Main",
