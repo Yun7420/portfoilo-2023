@@ -6,9 +6,13 @@ import { project_List } from "../../assets/datas/project";
 // 이미지
 import project_title_icon from "../../assets/img/project/project_title_icon.svg";
 
-const Project = () => {
+interface Props {
+  scrollProjectRef: React.ForwardedRef<HTMLDivElement | null>;
+}
+
+const Project = (props: Props) => {
   return (
-    <div id="PROJECT">
+    <div id="PROJECT" ref={props.scrollProjectRef}>
       <div className="wrapper">
         <div className="project_title">
           <img src={project_title_icon} alt="project 타이틀 이미지" />

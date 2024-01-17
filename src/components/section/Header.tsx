@@ -7,7 +7,11 @@ import { navigation_List } from "../../assets/datas/project";
 import logo_icon from "../../assets/img/header/logo_icon.svg";
 import fullMenu_icon from "../../assets/img/header/fullMenu_icon.svg";
 
-const Header = () => {
+interface Props {
+  setFullMenuState: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Header = (props: Props) => {
   return (
     <div id="Header">
       <div className="wrapper">
@@ -23,7 +27,7 @@ const Header = () => {
               ))}
             </ul>
 
-            <button>
+            <button onClick={() => props.setFullMenuState(true)}>
               <img src={fullMenu_icon} alt="전체메뉴 아이콘"></img>
             </button>
           </div>

@@ -7,9 +7,13 @@ import { complete_List } from "../../assets/datas/project";
 import about_title_icon from "../../assets/img/about/about_title_icon.svg";
 import profile_img from "../../assets/img/about/profile_img.png";
 
-const About = () => {
+interface Props {
+  scrollAboutRef: React.ForwardedRef<HTMLDivElement | null>;
+}
+
+const About = (props: Props) => {
   return (
-    <div id="ABOUT">
+    <div id="ABOUT" ref={(element) => console.log(element) }>
       <div className="wrapper">
         <div className="about_title">
           <img src={about_title_icon} alt="About 타이틀 이미지" />
