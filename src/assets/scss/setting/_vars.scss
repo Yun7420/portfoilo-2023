@@ -1,22 +1,22 @@
 // Vars
 :root {
-  --mainfont-play: "PlayfairDisplay";
-
+  // 컬러 셋팅
   --black: #000;
   --black100: #222;
   --black200: #555;
   --black300: #ccc;
-  --black400: #FAFAFA;
+  --black400: #fafafa;
 
   --white: #fff;
 
-  --subColorSky: #47A4FF;
-  --subColorSky100: #a9d4ff;
-  --subColorSky200: #d5eaff;
-  --subColorPurple300: #51277D;
-  --subColorOrange400: #FF6C37;
+  --subColorSkyBlue: #47a4ff;
+  --subColorSkyBlue100: #d5eaff;
+  --subColorPurple: #a968ff;
 
   // 폰트 셋팅
+  --mainfont-playfairDisplay: "PlayfairDisplay";
+
+  // 폰트 사이즈 셋팅
   font-size: 16px;
 
   // 폰트 최적화
@@ -43,4 +43,3 @@
     font-size: 11px;
   }
 }
-

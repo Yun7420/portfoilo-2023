@@ -7,12 +7,19 @@ import { skill_List } from "../../assets/datas/project";
 import skill_title_icon from "../../assets/img/skill/skill_title_icon.svg";
 
 interface Props {
-  scrollSkillRef: React.ForwardedRef<HTMLDivElement | null>;
+  scrollRef: React.MutableRefObject<HTMLDivElement[]>;
 }
 
-const Skill = (props: Props) => {
+const Skill = ({ scrollRef }: Props) => {
   return (
-    <div id="SKILL" ref={props.scrollSkillRef}>
+    <div
+      id="SKILL"
+      ref={(element) => {
+        if (element !== null) {
+          scrollRef.current[1] = element;
+        }
+      }}
+    >
       <div className="wrapper">
         <div className="skill_title">
           <img src={skill_title_icon} alt="Skill 타이틀 이미지" />

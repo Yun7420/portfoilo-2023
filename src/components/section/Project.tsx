@@ -7,12 +7,19 @@ import { project_List } from "../../assets/datas/project";
 import project_title_icon from "../../assets/img/project/project_title_icon.svg";
 
 interface Props {
-  scrollProjectRef: React.ForwardedRef<HTMLDivElement | null>;
+  scrollRef: React.MutableRefObject<HTMLDivElement[]>;
 }
 
-const Project = (props: Props) => {
+const Project = ({ scrollRef }: Props) => {
   return (
-    <div id="PROJECT" ref={props.scrollProjectRef}>
+    <div
+      id="PROJECT"
+      ref={(element) => {
+        if (element !== null) {
+          scrollRef.current[2] = element;
+        }
+      }}
+    >
       <div className="wrapper">
         <div className="project_title">
           <img src={project_title_icon} alt="project 타이틀 이미지" />

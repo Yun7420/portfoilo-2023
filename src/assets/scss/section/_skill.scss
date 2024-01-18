@@ -1,6 +1,10 @@
 // Skill
 #SKILL {
-  margin-top: 4rem;
+  margin-top: 5rem;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s;
 
   .skill_title {
     display: flex;
@@ -10,12 +14,15 @@
     img {
       width: 30px;
       height: 30px;
+
+      transform: rotate(0deg);
+      animation: titleIconAnimation 3s 1s ease-in-out infinite;
     }
 
     h2 {
       font-size: 2rem;
       font-weight: 600;
-      font-family: var(--mainfont-play);
+      font-family: var(--mainfont-playfairDisplay);
     }
   }
 
@@ -47,11 +54,47 @@
         }
 
         div:hover {
-          background-color: var(--subColorSky200);
-          border: 1px solid var(--subColorSky200);
+          background-color: var(--subColorSkyBlue100);
+          border: 1px solid var(--subColorSkyBlue100);
         }
       }
     }
+  }
+}
+
+#SKILL.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+// 애니메이션
+@keyframes titleIconAnimation {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(45deg);
+  }
+  20%{
+    transform: rotate(-45deg);
+  }
+  30%{
+    transform: rotate(30deg);
+  }
+  40%{
+    transform: rotate(-30deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  60%{
+    transform: rotate(-10deg);
+  }
+  70%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
 

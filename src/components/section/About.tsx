@@ -8,12 +8,19 @@ import about_title_icon from "../../assets/img/about/about_title_icon.svg";
 import profile_img from "../../assets/img/about/profile_img.png";
 
 interface Props {
-  scrollAboutRef: React.ForwardedRef<HTMLDivElement | null>;
+  scrollRef: React.MutableRefObject<HTMLDivElement[]>;
 }
 
-const About = (props: Props) => {
+const About = ({ scrollRef }: Props) => {
   return (
-    <div id="ABOUT" ref={(element) => console.log(element) }>
+    <div
+      id="ABOUT"
+      ref={(element) => {
+        if (element !== null) {
+          scrollRef.current[0] = element;
+        }
+      }}
+    >
       <div className="wrapper">
         <div className="about_title">
           <img src={about_title_icon} alt="About 타이틀 이미지" />

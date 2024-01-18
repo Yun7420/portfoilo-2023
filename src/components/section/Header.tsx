@@ -8,15 +8,17 @@ import logo_icon from "../../assets/img/header/logo_icon.svg";
 import fullMenu_icon from "../../assets/img/header/fullMenu_icon.svg";
 
 interface Props {
-  setFullMenuState: React.Dispatch<React.SetStateAction<boolean>>
+  setFullMenuState: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Header = (props: Props) => {
+const Header = ({ setFullMenuState }: Props) => {
   return (
     <div id="Header">
       <div className="wrapper">
         <div className="header_info">
-          <img className="logo" src={logo_icon} alt="로고 아이콘" />
+          <a href="#HOME" className="logo">
+            <img src={logo_icon} alt="로고 아이콘" />
+          </a>
 
           <div className="header_navigation">
             <ul>
@@ -27,7 +29,7 @@ const Header = (props: Props) => {
               ))}
             </ul>
 
-            <button onClick={() => props.setFullMenuState(true)}>
+            <button onClick={() => setFullMenuState(true)}>
               <img src={fullMenu_icon} alt="전체메뉴 아이콘"></img>
             </button>
           </div>

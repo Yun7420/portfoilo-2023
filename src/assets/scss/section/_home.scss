@@ -7,7 +7,7 @@
   background: url("../../img/home/background_img.png") no-repeat center;
   background-size: cover;
   color: var(--white);
-  
+
   .home_info {
     position: absolute;
     top: 50%;
@@ -17,18 +17,22 @@
     width: 100%;
 
     h1 {
-      font-size: 3.5rem;
-      font-family: var(--mainfont-play);
+      font-size: 4rem;
+      font-family: var(--mainfont-playfairDisplay);
       text-align: center;
     }
 
     p {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
       margin-top: 0.5rem;
       text-align: center;
     }
   }
 
-  img {
+  a {
     position: absolute;
     bottom: 2rem;
     left: 50%;
@@ -36,12 +40,17 @@
 
     width: 30px;
     height: 30px;
-    animation: updown 2s 1s ease-in-out infinite;
+    animation: homeIconAnimation 2s 1s ease-in-out infinite;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
 // 애니메이션
-@keyframes updown {
+@keyframes homeIconAnimation {
   0% {
     bottom: 2rem;
   }
@@ -62,7 +71,7 @@
       width: 90%;
 
       h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -72,7 +81,7 @@
   #HOME {
     .home_info {
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
     }
   }
@@ -82,7 +91,7 @@
   #HOME {
     .home_info {
       h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
   }

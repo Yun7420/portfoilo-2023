@@ -1,7 +1,10 @@
 // Study
 #STUDY {
-  margin-top: 4rem;
-  width: 100%;
+  margin-top: 5rem;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s;
 
   .study_title {
     display: flex;
@@ -11,12 +14,15 @@
     img {
       width: 30px;
       height: 30px;
+
+      transform: rotate(0deg);
+      animation: titleIconAnimation 3s 1s ease-in-out infinite;
     }
 
     h2 {
       font-size: 2rem;
       font-weight: 600;
-      font-family: var(--mainfont-play);
+      font-family: var(--mainfont-playfairDisplay);
     }
   }
 
@@ -28,7 +34,7 @@
     align-items: center;
     gap: 2rem;
 
-    .github {
+    a {
       flex: 1;
 
       display: flex;
@@ -40,55 +46,58 @@
       background-color: var(--black400);
       border-radius: 1rem;
 
-      .github_title {
+      div {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
 
         h3 {
           font-weight: bolder;
-          color: var(--subColorPurple300)
+          color: var(--subColorPurple300);
         }
       }
 
-      div {
-        img {
-          width: 80px;
-          height: 80px;
-        }
+      img {
+        width: 60px;
+        height: 60px;
       }
     }
+  }
+}
 
-    .tistory {
-      flex: 1;
+#STUDY.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-
-      padding: 2rem;
-      background-color: var(--black400);
-      border-radius: 1rem;
-
-      .tistory_title {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        h3 {
-          font-weight: bolder;
-          color: var(--subColorOrange400)
-        }
-      }
-
-      div {
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
+// 애니메이션
+@keyframes titleIconAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(45deg);
+  }
+  20% {
+    transform: rotate(-45deg);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
@@ -108,21 +117,10 @@
 @media only screen and (max-width: 500px) {
   #STUDY {
     .study_info {
-      .github {
-        div {
-          img {
-            width: 50px;
-            height: 50px;
-          }
-        }
-      }
-
-      .tistory {
-        div {
-          img {
-            width: 50px;
-            height: 50px;
-          }
+      a {
+        img {
+          width: 50px;
+          height: 50px;
         }
       }
     }

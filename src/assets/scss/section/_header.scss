@@ -18,18 +18,22 @@
   align-items: center;
 
   .logo {
-    width: 120px
+    width: 120px;
+
+    img {
+      width: 120px;
+    }
   }
 
   .header_navigation {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-
     ul {
       display: flex;
       align-items: center;
       gap: 3rem;
+
+      li:hover {
+        color: var(--subColorPurple);
+      }
     }
 
     button {
@@ -50,7 +54,11 @@
 @media only screen and (max-width: 700px) {
   .header_info {
     .logo {
-      width: 100px
+      width: 100px;
+
+      img {
+        width: 100px;
+      }
     }
   }
 }
