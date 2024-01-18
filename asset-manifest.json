@@ -1,30 +1,29 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.3d957894.css",
-    "main.js": "/portfolio-2023/static/js/main.33b7f2b2.js",
+    "main.js": "/portfolio-2023/static/js/main.12333a13.js",
     "static/media/portfolio_img.png": "/portfolio-2023/static/media/portfolio_img.4022b0d1e8a95339b472.png",
     "static/media/disney_img.png": "/portfolio-2023/static/media/disney_img.e2dd9a15509281045cae.png",
     "static/media/background_img.png": "/portfolio-2023/static/media/background_img.1b3acb5affb9b2d2e43f.png",
     "static/media/weather_img.png": "/portfolio-2023/static/media/weather_img.3b6227cb8b530afc3330.png",
     "static/media/todolist_img.png": "/portfolio-2023/static/media/todolist_img.e33b02f67be553082dfe.png",
     "static/media/rockscissorspaper_img.png": "/portfolio-2023/static/media/rockscissorspaper_img.8b78d728399d8c3fd74a.png",
-    "static/media/ts_icon.svg": "/portfolio-2023/static/media/ts_icon.f607c2ecde199859147234e53c68fcd4.svg",
+    "static/media/typescript_icon.svg": "/portfolio-2023/static/media/typescript_icon.f607c2ecde199859147234e53c68fcd4.svg",
     "static/media/tailwind_icon.svg": "/portfolio-2023/static/media/tailwind_icon.85af076b1f85c717cf45ec9c2800116a.svg",
     "static/media/PlayfairDisplay-SemiBold.ttf": "/portfolio-2023/static/media/PlayfairDisplay-SemiBold.8762ccb8000d27202454.ttf",
     "static/media/PlayfairDisplay-Medium.ttf": "/portfolio-2023/static/media/PlayfairDisplay-Medium.b6b10a3a3492328a0c3f.ttf",
     "static/media/PlayfairDisplay-Bold.ttf": "/portfolio-2023/static/media/PlayfairDisplay-Bold.c3c9165182044bf7f179.ttf",
     "static/media/PlayfairDisplay-Regular.ttf": "/portfolio-2023/static/media/PlayfairDisplay-Regular.6a97b5c64f316f567fa1.ttf",
-    "static/media/postman_icon.svg": "/portfolio-2023/static/media/postman_icon.e612dda1f476beb30cba491419e83557.svg",
     "static/media/profile_img.png": "/portfolio-2023/static/media/profile_img.dc2be166ba0969494f39.png",
     "static/media/bootstrap_icon.svg": "/portfolio-2023/static/media/bootstrap_icon.fb15fb5d286a80b088d25c7183fdb8f6.svg",
     "static/media/css_icon.svg": "/portfolio-2023/static/media/css_icon.1eaeb68053d0eb5897a7fea239b3d75b.svg",
     "static/media/html_icon.svg": "/portfolio-2023/static/media/html_icon.1e9d4a14a87b672d1790b1ac1d2ab5e9.svg",
-    "static/media/js_icon.svg": "/portfolio-2023/static/media/js_icon.abfc024ca887dc97ff3b5a618fac38ff.svg",
-    "static/media/mongo_icon.svg": "/portfolio-2023/static/media/mongo_icon.3f0fa984754eed9bd29ec46ae9f603ae.svg",
-    "static/media/query_icon.svg": "/portfolio-2023/static/media/query_icon.ba9dea9b650a7db07ca99002f477547d.svg",
-    "static/media/node_icon.svg": "/portfolio-2023/static/media/node_icon.fcbe9fdf8486159f1a775313afad31f9.svg",
+    "static/media/javascript_icon.svg": "/portfolio-2023/static/media/javascript_icon.abfc024ca887dc97ff3b5a618fac38ff.svg",
+    "static/media/react_query_icon.svg": "/portfolio-2023/static/media/react_query_icon.ba9dea9b650a7db07ca99002f477547d.svg",
+    "static/media/node_js_icon.svg": "/portfolio-2023/static/media/node_js_icon.fcbe9fdf8486159f1a775313afad31f9.svg",
     "static/media/logo_icon.svg": "/portfolio-2023/static/media/logo_icon.bd8f4f57aec6fab447741e58284a7eab.svg",
-    "static/media/sass_icon.svg": "/portfolio-2023/static/media/sass_icon.0d2d92fa8815e67f91bbb902b793f0e1.svg",
+    "static/media/styled_component_icon.svg": "/portfolio-2023/static/media/styled_component_icon.b241b0b47fae9d654ff2d0a95a2a1c1c.svg",
+    "static/media/sass_scss_icon.svg": "/portfolio-2023/static/media/sass_scss_icon.0d2d92fa8815e67f91bbb902b793f0e1.svg",
     "static/media/react_icon.svg": "/portfolio-2023/static/media/react_icon.871abf54c5740cc744af3b34cc875474.svg",
     "static/media/axios_icon.svg": "/portfolio-2023/static/media/axios_icon.0d48e27058a81b246c04b0c0423d6d4b.svg",
     "static/media/tistory_icon.svg": "/portfolio-2023/static/media/tistory_icon.c9789de52c6b596c97145de7f2d38277.svg",
@@ -40,10 +39,10 @@
     "static/media/fullMenu_icon.svg": "/portfolio-2023/static/media/fullMenu_icon.6ac641c5b0c2456100180f9145c33600.svg",
     "static/media/close_icon.svg": "/portfolio-2023/static/media/close_icon.47ecb92c16e3c237b6cb979f4707d184.svg",
     "main.3d957894.css.map": "/portfolio-2023/static/css/main.3d957894.css.map",
-    "main.33b7f2b2.js.map": "/portfolio-2023/static/js/main.33b7f2b2.js.map"
+    "main.12333a13.js.map": "/portfolio-2023/static/js/main.12333a13.js.map"
   },
   "entrypoints": [
     "static/css/main.3d957894.css",
-    "static/js/main.33b7f2b2.js"
+    "static/js/main.12333a13.js"
   ]
 }
