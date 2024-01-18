@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2023/static/css/main.477bc179.css",
-    "main.js": "/portfolio-2023/static/js/main.9a51f687.js",
+    "main.css": "/portfolio-2023/static/css/main.3d957894.css",
+    "main.js": "/portfolio-2023/static/js/main.33b7f2b2.js",
     "static/media/portfolio_img.png": "/portfolio-2023/static/media/portfolio_img.4022b0d1e8a95339b472.png",
     "static/media/disney_img.png": "/portfolio-2023/static/media/disney_img.e2dd9a15509281045cae.png",
     "static/media/background_img.png": "/portfolio-2023/static/media/background_img.1b3acb5affb9b2d2e43f.png",
@@ -39,11 +39,11 @@
     "index.html": "/portfolio-2023/index.html",
     "static/media/fullMenu_icon.svg": "/portfolio-2023/static/media/fullMenu_icon.6ac641c5b0c2456100180f9145c33600.svg",
     "static/media/close_icon.svg": "/portfolio-2023/static/media/close_icon.47ecb92c16e3c237b6cb979f4707d184.svg",
-    "main.477bc179.css.map": "/portfolio-2023/static/css/main.477bc179.css.map",
-    "main.9a51f687.js.map": "/portfolio-2023/static/js/main.9a51f687.js.map"
+    "main.3d957894.css.map": "/portfolio-2023/static/css/main.3d957894.css.map",
+    "main.33b7f2b2.js.map": "/portfolio-2023/static/js/main.33b7f2b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.477bc179.css",
-    "static/js/main.9a51f687.js"
+    "static/css/main.3d957894.css",
+    "static/js/main.33b7f2b2.js"
   ]
 }
