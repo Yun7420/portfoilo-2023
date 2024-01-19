@@ -26,7 +26,7 @@ const Home = () => {
     }, 200);
   };
 
-  // 현재 스크콜 useEffect
+  // 현재 스크롤 Y값 useEffect
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
 

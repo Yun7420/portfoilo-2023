@@ -5,7 +5,7 @@ import { navigation_List } from "../../assets/datas/project";
 
 // 이미지
 import logo_icon from "../../assets/img/header/logo_icon.svg";
-import fullMenu_icon from "../../assets/img/header/fullMenu_icon.svg";
+import fullMenu_icon from "../../assets/img/header/fullmenu_icon.svg";
 
 interface Props {
   setFullMenuState: React.Dispatch<React.SetStateAction<boolean>>;
