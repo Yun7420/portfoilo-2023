@@ -1,7 +1,7 @@
 import React from "react";
 
 // 데이터
-import { skill_List } from "../../assets/datas/project";
+import { skill_List } from "../../assets/datas/skill";
 
 // 이미지
 import skill_title_icon from "../../assets/img/skill/skill_title_icon.svg";

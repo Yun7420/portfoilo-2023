@@ -1,15 +1,59 @@
 import React from "react";
 
 // 데이터
-import { complete_List } from "../../assets/datas/project";
+import { complete_List } from "../../assets/datas/about";
 
 // 이미지
 import about_title_icon from "../../assets/img/about/about_title_icon.svg";
-import profile_img from "../../assets/img/about/profile_img.png";
+import about_user from "../../assets/img/about/about_user.svg";
+import about_calendar from "../../assets/img/about/about_calendar.svg";
+import about_location from "../../assets/img/about/about_location.svg";
+import about_phone from "../../assets/img/about/about_phone.svg";
+import about_email from "../../assets/img/about/about_email.svg";
+import about_computer from "../../assets/img/about/about_computer.svg";
 
 interface Props {
   scrollRef: React.MutableRefObject<HTMLDivElement[]>;
 }
+
+const about = [
+  {
+    src: about_user,
+    alt: "이름 아이콘",
+    title: "이름",
+    text: "한상윤"
+  },
+  {
+    src: about_calendar,
+    alt: "생년월일 아이콘",
+    title: "생년월일",
+    text: "1998.04.15"
+  },
+  {
+    src: about_location,
+    alt: "주소 아이콘",
+    title: "주소",
+    text: "인천광역시 남구"
+  },
+  {
+    src: about_phone,
+    alt: "연락처 아이콘",
+    title: "연락처",
+    text: "010-7420-3477"
+  },
+  {
+    src: about_email,
+    alt: "이메일 아이콘",
+    title: "이메일",
+    text: "hsy742010@naver.com"
+  },
+  {
+    src: about_computer,
+    alt: "경력 아이콘",
+    title: "경력",
+    text: "퍼블리셔 10개월"
+  }
+]
 
 const About = ({ scrollRef }: Props) => {
   return (
@@ -28,24 +72,17 @@ const About = ({ scrollRef }: Props) => {
         </div>
 
         <div className="about_info">
-          <img src={profile_img} alt="프로필 이미지" />
-
-          <div>
-            <h2>
-              <b>한상윤 (Han Sang Yun)</b>
-            </h2>
-            <p>
-              빠르게 성장하는 웹개발 트랜드 속에서{" "}
-              <b>“어제보다 더 나은 코드를 작성하자!”</b>라는 마음으로 다양한
-              시도를 해보고 매일 고민하며 프론트엔드 개발자로 한걸음
-              나아가기위해 꾸준하게 노력하고 있습니다.
-            </p>
-            <ul>
-              {complete_List.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
+          <ul>
+            {about.map((item) => (
+              <li>
+                <img src={item.src} alt={item.alt}/>
+                <div>
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

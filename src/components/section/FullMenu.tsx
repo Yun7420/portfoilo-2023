@@ -1,7 +1,7 @@
 import React from "react";
 
 // 데이타
-import { navigation_List } from "../../assets/datas/project";
+import { navigation_List } from "../../assets/datas/header";
 
 // 이미지
 import close_icon from "../../assets/img/fullmenu/close_icon.svg";

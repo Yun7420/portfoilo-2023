@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 // 데이터
-import { home_Text } from "../../assets/datas/project";
+import { home_Text } from "../../assets/datas/home";
 
 // 이미지
 import mouse_icon from "../../assets/img/home/mouse_icon.svg";

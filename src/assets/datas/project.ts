@@ -1,178 +1,80 @@
-// Skill 이미지
-import html_icon from "../img/skill/html_icon.svg";
-import css_icon from "../img/skill/css_icon.svg";
-import javascript_icon from "../img/skill/javascript_icon.svg";
-import typescript_icon from "../img/skill/typescript_icon.svg";
-import react_icon from "../img/skill/react_icon.svg";
-import redux_icon from "../img/skill/redux_icon.svg";
-import react_query_icon from "../img/skill/react_query_icon.svg";
-import axios_icon from "../img/skill/axios_icon.svg";
-import sass_scss_icon from "../img/skill/sass_scss_icon.svg";
-import styled_component_icon from "../img/skill/styled_component_icon.svg"
-import bootstrap_icon from "../img/skill/bootstrap_icon.svg";
-import tailwind_icon from "../img/skill/tailwind_icon.svg";
-import git_icon from "../img/skill/git_icon.svg";
-import github_icon from "../img/skill/github_icon.svg";
-import node_icon from "../img/skill/node_js_icon.svg";
-
 // Project 이미지
-import todolist_img from "../img/project/todolist_img.png";
-import rockscissorspaper_img from "../img/project/rockscissorspaper_img.png";
-import disney_img from "../img/project/disney_img.png";
-import portfolio_img from "../img/project/portfolio_img.png";
-import weather_img from "../img/project/weather_img.png";
-
-// Header Components Data
-export let navigation_List: string[] = [
-  "HOME",
-  "ABOUT",
-  "SKILL",
-  "PROJECT",
-  "STUDY",
-];
-
-// Home Components Data
-export let home_Text: string = "꿈을 향해 올라가는 프론트엔드 개발자 한상윤입니다.";
-
-// About Components Data
-export let complete_List: string[] = [
-  "2024 프론트엔드 개발(웹코딩) 과정 수료",
-  "2023 웹 디자인 시그니처 전문가 과정 수료",
-  "2022 그래픽디자인과 반응형 과정 수료",
-  "2022 쇼핑몰구축및 웹디자인 과정 수료",
-];
-
-// Skill Components Data
-export let skill_List: { src: string; alt: string; name: string }[] = [
-  {
-    src: html_icon,
-    alt: "HTML 아이콘",
-    name: "HTML",
-  },
-  {
-    src: css_icon,
-    alt: "CSS 아이콘",
-    name: "CSS",
-  },
-  {
-    src: javascript_icon,
-    alt: "JavaScript 아이콘",
-    name: "JavaScript",
-  },
-  {
-    src: typescript_icon,
-    alt: "TypeScript 아이콘",
-    name: "TypeScript",
-  },
-  {
-    src: react_icon,
-    alt: "React 아이콘",
-    name: "React",
-  },
-  {
-    src: redux_icon,
-    alt: "Redux 아이콘",
-    name: "Redux",
-  },
-  {
-    src: react_query_icon,
-    alt: "React Query 아이콘",
-    name: "React Query",
-  },
-  {
-    src: axios_icon,
-    alt: "Axios 아이콘",
-    name: "Axios",
-  },
-  {
-    src: sass_scss_icon,
-    alt: "Sass(SCSS) 아이콘",
-    name: "Sass(SCSS)",
-  },
-  {
-    src: styled_component_icon,
-    alt: "Styled-Component 아이콘",
-    name: "Styled-Component",
-  },
-  {
-    src: bootstrap_icon,
-    alt: "Bootstrap 아이콘",
-    name: "Bootstrap",
-  },
-  {
-    src: tailwind_icon,
-    alt: "Tailwind 아이콘",
-    name: "Tailwind",
-  },
-  {
-    src: git_icon,
-    alt: "Git 아이콘",
-    name: "Git",
-  },
-  {
-    src: github_icon,
-    alt: "GitHub 아이콘",
-    name: "GitHub",
-  },
-  {
-    src: node_icon,
-    alt: "Node 아이콘",
-    name: "Node",
-  },
-];
+import netflix_project_img from "../img/project/netflix_project_img.png"
+import portfolio_project_img from "../img/project/portfolio_project_img.png";
+import weather_project_img from "../img/project/weather_project_img.png";
+import rockscissorspaper_project_img from "../img/project/rockscissorspaper_project_img.png";
+import todolist_project_img from "../img/project/todolist_project_img.png";
+import disney_project_img from "../img/project/disney_project_img.png";
 
 // Project Components Data
 export let project_List: {
-  [key: string]: string;
+  src: string;
+  alt: string;
+  title: string;
+  text: string;
+  subText: string,
+  program: string[];
+  siteLink: string;
+  codeLink: string;
 }[] = [
   {
-    category: "Main",
-    src: weather_img,
-    alt: "Weather 이미지",
-    title: "Weather",
-    text: "Weather Api를 활용하여 만든 날씨 프로젝트입니다. 현재 위치, 도시이름을 통해서 날씨를 확인할 수 있으며 차트와 날씨 예상을 통해서 자세한 날씨 정보를 확인할 수 있습니다.",
-    program: "Js, React, Scss",
-    siteLink: "https://yun7420.github.io/weather-2023/",
-    codeLink: "https://github.com/Yun7420/weather-2023",
+    src: netflix_project_img,
+    alt: "넷플릭스 프로젝트 이미지",
+    title: "넷플릭스 프로젝트",
+    text: "TMDB API를 호출하여 제작한 영화 사이트입니다.",
+    subText: "기존 TMDB API를 fetch로 호출할경우 받아온 영화 데이터를 필터링 작업까지해야 사용할 수 있었고 Component에 영화데이터를 보낼때는 State에 담아서 보내야했습니다. React Query의 select옵션을 통해서 영화데이터를 쉽게 추출할 수 있었고 추가적으로 axios.create의 baseURL을 설정함으로써 공통적인 API호출 코드를 간략화 하고 env환경변수로 받아온 API키를 사용할 수 있었습니다. 또한 QueryClientProvider를 통해서 데이터를 호출하는 함수를 다른 Component에서도 사용할 수 있었습니다. 현재는 React Query에서 제공하는 isLoading을 React Loading Skeleton을 활용하여 로딩하는 동안 사용자에게 Skeleton 컴포넌트를 보여줄 수 있도록 처리하려고 작업 중에 있습니다.",
+    program: ["JavaScript", "React", "React Query", "Axios", "Bootstrap"],
+    siteLink: "https://yun7420.github.io/netflix-demo-2024/",
+    codeLink: "https://github.com/Yun7420/netflix-demo-2024",
   },
   {
-    category: "Main",
-    src: portfolio_img,
-    alt: "Portfolio 이미지",
-    title: "Portfolio",
-    text: "학습하고 만들어낸 결과물을 담아둔 포트폴리오 사이트입니다. About에서는 개인적인 정보, Skill에서는 학습한 기술, Project에서는 만들어낸 결과물, Study에서는 공부한 과정들을 확인할 수 있습니다.",
-    program: "Js, Ts, React, Scss",
+    src: portfolio_project_img,
+    alt: "포트폴리오 사이트 이미지",
+    title: "포트폴리오 사이트",
+    text: "이력정보 및 개인 프로젝트를 보여주기 위한 포트폴리오 사이트입니다.",
+    subText: "HOME 화면에서는 setInterval 함수를 통해 State에 Text를 담으면서 타이핑 효과를 주었으며 useEffect에 addEventListener 스크롤 이벤트를 주면서 배경 이미지 position Y 값이 변경될 수 있도록 하였습니다. 각각의 메뉴들은 useRef 객체 형태로 담아 IntersectionObserver로 추적해 화면에 표출될 경우 이벤트를 발생시킬 수 있도록 하였으며 useRef를 단순 빈값으로 두는 게 아닌 타입 스크립트 오류를 해결하기 위해 빈 배열로 만들었습니다. Ref를 Props로 넘겼을 때 MutableRefObject 오류를 해결하기 위해 블로그를 찾아보았으며 Ref의 Props 옵션은 3가지 이상 된다는 것을 알게 되었습니다.",
+    program: ["JavaScript", "TypeScript", "React", "Sass(SCSS)"],
     siteLink: "https://yun7420.github.io/portfolio-2023/",
     codeLink: "https://github.com/Yun7420/portfolio-2023",
   },
   {
-    category: "Main",
-    src: disney_img,
-    alt: "Disney Clone 이미지",
-    title: "Disney Clone",
-    text: "Disney 사이트를 클론코딩한 프로젝트입니다. 사용자는 원하는 상영 프로그램의 간단한 내용, 공개일, 장르, 관람등급, 출연진 등을 확일 할 수 있습니다.",
-    program: "Html, Css, Js",
-    siteLink: "https://disney-clone-2023.netlify.app/",
-    codeLink: "https://github.com/Yun7420/disney-clone-project",
+    src: weather_project_img,
+    alt: "날씨 프로젝트 이미지",
+    title: "날씨 프로젝트",
+    text: "Weather API를 호출하여 제작한 날씨 프로젝트입니다.",
+    subText: "사용자가 위치 액세스를 허용할 경우 Redux Action을 통해 Weather API를 호출한 후 Reducer에서 관리되는 State가 useSelector을 통해 다른 Component 들에 전달되어 화면에 업데이트됩니다. 추가적으로 도시 이름을 입력할 경우 해당 도시의 날씨 정보를 얻을 수 있는데 라이브 서치 기능을 추가함으로써 도시 이름 정보를 쉽게 파악할 수 있도록 하였습니다. 처음에는 데이터가 업데이트될떄 Loading Spinner로 로딩 정보를 보여줬지만 React Loading Skeleton을 활용하여 데이터 정보를 추측할 수 있도록 만들어보았습니다.",
+    program: ["JavaScript", "React", "Redux", "Sass(SCSS)"],
+    siteLink: "https://yun7420.github.io/weather-2023/",
+    codeLink: "https://github.com/Yun7420/weather-2023",
   },
   {
-    category: "Sub",
-    src: rockscissorspaper_img,
-    alt: "RockScissorsPaper 이미지",
-    title: "RockScissorsPaper",
-    text: "가위바위보 게임 미니 프로젝트입니다. 사용자가 아이템을 선택하면 컴퓨터는 무작위로 아이템을 선택합니다. 선택한 아이템을 기준으로 승패와 점수를 확인할 수 있으며 언제든 결과를 Reset할 수 있습니다.",
-    program: "Js, Ts, React, Css",
+    src: rockscissorspaper_project_img,
+    alt: "가위바위보 게임 미니프로젝트 이미지",
+    title: "가위바위보 게임 미니프로젝트",
+    text: "타입스크립트를 기반으로 만든 가위바위보 게임 미니 프로젝트입니다.",
+    subText: "사용자는 게임을 시작하기 위해 3가지의 아이템 중 하나를 선택하면 컴퓨터는 무작위로 아이템을 선택합니다. 결과를 확인하고 승패 데이터 및 스코어 데이터가 로컬 스토리지에 업데이트되며 화면에 표출됩니다. 타입 스크립트를 처음 사용해 본 프로젝트이기에 모든 데이터에 타입을 지정해 보도록 노력하였으며 로컬 스토리지 string | null 타입 오류를 해결해 봄으로써 데이터가 저장될 때 어떤 타입이 들어가는지 다시 한번 더 생각해 볼 수 있었습니다. 마지막으로 처음 프로젝트를 시작했을 때 이미지를 import하면 모듈 오류가 발생했는데 custom.d.ts에 이미지 모듈들을 저장해 불러올 수 있었습니다.",
+    program: ["JavaScript", "TypeScript", "React", "CSS"],
     siteLink: "https://yun7420.github.io/rockscissorspaper-2023/",
     codeLink: "https://github.com/Yun7420/rockscissorspaper-2023",
   },
   {
-    category: "Sub",
-    src: todolist_img,
-    alt: "ToDoList 이미지",
-    title: "ToDoList",
-    text: "할일목록관리 미니 프로젝트입니다. 사용자는 오늘의 날짜를 확인하고, 할일을 등록, 수정, 삭제 할 수 있으며, 할일들을 필터하며 관리할 수 있습니다.",
-    program: "Js, React, Styled Components",
+    src: todolist_project_img,
+    alt: "할일목록 미니프로젝트 이미지",
+    title: "할일목록 미니프로젝트",
+    text: "리액트를 통해 만들어본 할일 목록 미니 프로젝트입니다.",
+    subText: "사용자에게 보여줄 UI 적 예시를 seed 데이터를 생성하여 로컬 스토리지에 담아두었으며, 할일을 추가, 수정, 삭제했을 때 조건문에 따라 로컬 스토리지 데이터가 업데이트될 수 있도록 만들어보았습니다. React에서 자주 사용되는 map과 filter를 사용함으로써 저장된 데이터 목록을 보여주고 필터링할 수 있도록 제작해 보았습니다.",
+    program: ["JavaScript", "React", "Styled Components"],
     siteLink: "https://yun7420.github.io/todo_list-2023/",
     codeLink: "https://github.com/Yun7420/todo_list-2023",
+  },
+  {
+    src: disney_project_img,
+    alt: "디즈니 클론 프로젝트 이미지",
+    title: "디즈니 클론 프로젝트",
+    text: "리액트를 사용해 보기 전 만들어본 디즈니 영화 사이트입니다.",
+    subText: "영화 목록을 클릭했을 때 영화 디테일 페이지로 이동하며 모든 페이지의 디자인은 동일하고 데이터만 바뀌는 형식입니다. 이러한 형식을 보면서 React의 Component의 재활용성을 느낄 수 있었으며 map 혹은 filter 같은 자바스크립트 코드가 필요하다는 것을 느낄 수 있었습니다.",
+    program: ["HTML", "CSS", "JavaScript"],
+    siteLink: "https://disney-clone-2023.netlify.app/",
+    codeLink: "https://github.com/Yun7420/disney-clone-project",
   },
 ];

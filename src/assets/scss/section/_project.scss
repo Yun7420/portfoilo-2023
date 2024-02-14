@@ -31,9 +31,13 @@
 
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
     .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       padding: 2rem;
       background-color: var(--black400);
       border-radius: 1rem;
@@ -60,18 +64,18 @@
         }
 
         p {
-          margin: 1rem 0 0;
-          height: 110px;
+          margin: 1rem 0;
         }
 
         .project_skill {
           display: flex;
-          align-items: center;
+          flex-wrap: wrap;
+          align-items: flex-end;
           gap: 1rem;
           color: var(--subColorSkyBlue);
 
           div {
-            padding: 0 0.5rem;
+            padding: 0.2rem 1rem;
             border: 1px solid var(--subColorSkyBlue);
             border-radius: 1rem;
           }

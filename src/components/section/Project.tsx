@@ -35,9 +35,11 @@ const Project = ({ scrollRef }: Props) => {
 
               <div className="project_info">
                 <h3>{item.title}</h3>
-                <p>{item.text}</p>
+                <p>{item.text} <br />{item.subText}</p>
                 <div className="project_skill">
-                  <div>사용 기술</div> {item.program}
+                  {item.program.map((item) => (
+                    <div>{item}</div>
+                  ))}
                 </div>
               </div>
 

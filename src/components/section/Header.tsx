@@ -1,7 +1,7 @@
 import React from "react";
 
 // 데이터
-import { navigation_List } from "../../assets/datas/project";
+import { navigation_List } from "../../assets/datas/header";
 
 // 이미지
 import logo_icon from "../../assets/img/header/logo_icon.svg";
